@@ -663,6 +663,74 @@ break;
 }
         
 }
+public void usuwanieDanych()
+        
+{
+            
+string folderCache = @"C:\Windows\Temp\CsgoSkinPriceCheck\";
+            
+bool czyWszystkoUsuniete = true;
+
+            
+if (!Directory.Exists(folderCache) && !Directory.EnumerateFileSystemEntries(folderCache).Any())
+                
+MessageBox.Show("Brak cache do usunięcia.");
+
+            
+else
+            
+{
+                
+DirectoryInfo folder = new DirectoryInfo(folderCache);
+                
+foreach (FileInfo plik in folder.GetFiles())
+                
+{
+                    
+plik.Delete();
+                
+}
+
+                
+foreach (DirectoryInfo _folder in folder.GetDirectories())
+                
+{
+                    
+try
+                    
+{
+                        
+_folder.Delete(true);
+                    
+}
+                    
+catch
+                    
+{
+                        
+czyWszystkoUsuniete = false;
+                    
+}
+               
+ }
+
+                
+if (czyWszystkoUsuniete == true)
+                    
+Directory.Delete(folderCache);
+            
+}
+
+            
+if (czyWszystkoUsuniete == false)
+                
+MessageBox.Show("Niektóre dane nie mogły zostać usunięte. Możesz usunąć je ręcznie."); 
+//Nie można usunąć obecnie wyświetlanej grafiki.
+
+            
+Application.Exit();
+        
+}
 
 }
 
