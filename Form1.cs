@@ -367,6 +367,25 @@ MessageBox.Show(ex.ToString());
 }
         
 }
+public void comboBox2SelectedOffline()
+       
+ {
+           
+ try
+            
+{
+                
+int m = 0;
+                
+for (; m < sortedListaZDanymi.Count; m++)
+                
+{
+                    
+if (comboBox1.Text == sortedListaZDanymi[m].nazwaBroni && comboBox2.Text == sortedListaZDanymi[m].nazwaSkina)
+                        
+break;
+                
+}
 
 }
 
