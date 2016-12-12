@@ -61,7 +61,7 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Cena:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // label2
             // 
@@ -71,7 +71,7 @@
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Inne ceny:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            
             // 
             // label4
             // 
@@ -81,7 +81,7 @@
             this.label4.Size = new System.Drawing.Size(16, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "---";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            
             // 
             // label3
             // 
