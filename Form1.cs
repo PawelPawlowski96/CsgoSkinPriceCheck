@@ -54,7 +54,17 @@ InitializeComponent();
 
  }
 
+   private void Form1_Load(object sender, EventArgs e)
         
+{
+            
+pobieranie = new Thread(pobieranieDanych);
+            
+usuwanie = new Thread(usuwanieDanych);
+            
+label8.Visible = false;
+            
+comboBox1.Text = "Wybierz broń";     
 
     
 }
