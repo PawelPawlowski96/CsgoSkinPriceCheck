@@ -223,6 +223,54 @@ break;
                 
 }
 
+//Ograniczyłem wartość postępu do maksymalnie dwóch miejsc po przecinku.
+                
+string wynik = Convert.ToString((float)postep / (float)bronie.Length * 100);
+                
+if (wynik.Length >= 4)
+                    
+wynik = wynik.Substring(0, 4);
+                
+MessageBox.Show("Poczekaj na zakończenie pobierania. \nUkończono około " + wynik + "%");
+
+  }
+            
+else
+            
+{
+                
+try
+                
+{
+                    
+for (int i = 0; i < sortedListaZDanymi.Count; i++)
+                    
+{
+                        
+if (sortedListaZDanymi[i].nazwaBroni == comboBox1.Text)
+                           
+ comboBox2.Items.Add(sortedListaZDanymi[i].nazwaSkina);
+                    
+}
+                
+}
+                
+catch (Exception ex)
+                
+{
+                    
+MessageBox.Show(ex.ToString());
+                
+}
+            
+}
+        
+}
+
+        
+private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        
+{
 
 }
 
