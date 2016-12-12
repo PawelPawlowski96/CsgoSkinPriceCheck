@@ -1,0 +1,36 @@
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.exe.config
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.Properties.Resources.resources
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.csproj.GenerateResource.Cache
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.exe
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.pdb
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.Form1.resources
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.exe
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.pdb
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.csprojResolveAssemblyReference.cache
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.exe.manifest
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.application
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.exe.manifest
+D:\visual studio 2015\Projects\CsgoSkinPriceCheck\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.application
+C:\Users\Paweł\Downloads\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.exe.config
+C:\Users\Paweł\Downloads\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.exe
+C:\Users\Paweł\Downloads\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.pdb
+C:\Users\Paweł\Downloads\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.csprojResolveAssemblyReference.cache
+C:\Users\Paweł\Downloads\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.Form1.resources
+C:\Users\Paweł\Downloads\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.Properties.Resources.resources
+C:\Users\Paweł\Downloads\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.csproj.GenerateResource.Cache
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.exe.config
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.exe.manifest
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.application
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.exe
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.pdb
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.csprojResolveAssemblyReference.cache
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.Form1.resources
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.Properties.Resources.resources
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.csproj.GenerateResource.Cache
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.exe.manifest
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.application
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.exe
+C:\Users\Paweł\Desktop\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.pdb
+C:\Users\Paweł\Desktop\Nowy folder — kopia\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\bin\Debug\CsgoSkinPriceCheck.exe.config
+C:\Users\Paweł\Desktop\Nowy folder — kopia\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.exe
+C:\Users\Paweł\Desktop\Nowy folder — kopia\CsgoSkinPriceCheck_c--master\CsgoSkinPriceCheck\obj\Debug\CsgoSkinPriceCheck.pdb
