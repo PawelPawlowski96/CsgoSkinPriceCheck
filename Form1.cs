@@ -555,6 +555,90 @@ numer = 0;
 }
         
 }
+public void pobieranieDanych()
+        
+{
+            
+List<PobraneDane> listaZDanymi = new List<PobraneDane>();
+
+            
+for (int z = 0; z < bronie.Length; z++)
+            
+{
+                
+obecniePobieranaBron = bronie[z];
+                
+string stronaZeSkinami = new WebClient().DownloadString(ustalanieAdresuUrl(obecniePobieranaBron));
+                
+File.WriteAllText(@"C:\Windows\Temp\CsgoSkinPriceCheck\CsgoSkinPriceCheck_temp1.txt", stronaZeSkinami);
+                
+linieStrony = File.ReadAllLines(@"C:\Windows\Temp\CsgoSkinPriceCheck\CsgoSkinPriceCheck_temp1.txt");
+
+                
+int nrLn;
+                
+ustalanieNumeruLiniiZPierwszymSkinem(linieStrony, out nrLn);
+
+                
+while (nrLn != 0)
+                
+{
+                    
+string _skin = ustalanieNazwySkina(linieStrony, nrLn);
+                    
+string liniaZCena = linieStrony[nrLn + 13];
+                    
+string liniaTestowa = linieStrony[nrLn + 16];
+
+                    
+if (linieStrony[nrLn + 7].Contains("Available"))
+                    
+{
+                        
+ustalanieCeny(ref liniaTestowa);
+
+                        
+if (linieStrony[nrLn + 7].Contains("StatTrak"))
+                            
+liniaTestowa = liniaTestowa + " (StatTrak)";
+                        
+if (linieStrony[nrLn + 7].Contains("Souvenir"))
+                            
+liniaTestowa = liniaTestowa + " (Souvenir)";
+                    
+}
+
+                    ustalanieCeny(ref liniaZCena);
+
+                    
+int numerLiniiZGrafika = nrLn + 10;
+                    
+string nazwaGrafiki = obecniePobieranaBron + " " + _skin + ".png";
+                    
+new WebClient().DownloadFile(ustalanieLikuDoGrafiki(numerLiniiZGrafika, linieStrony), @"C:\Windows\Temp\CsgoSkinPriceCheck\images\" + nazwaGrafiki);
+                    
+PobraneDane dane = new PobraneDane(obecniePobieranaBron, _skin, liniaZCena, liniaTestowa, nazwaGrafiki);
+                    
+listaZDanymi.Add(dane);
+                    
+ustalanieNastepnegoNumeruStrony(linieStrony, dane.nazwaBroni, ref nrLn);
+                
+}
+            
+}
+
+            
+sortedListaZDanymi = listaZDanymi.OrderBy(o => o.nazwaSkina).ToList();
+
+            
+checkBox1.Enabled = false;
+            
+button1.Enabled = true;
+
+            
+MessageBox.Show("Pobrano zawartość.");
+        
+}
 
 }
 
