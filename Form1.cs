@@ -639,6 +639,30 @@ button1.Enabled = true;
 MessageBox.Show("Pobrano zawartość.");
         
 }
+private void ustalanieNumeruLiniiZPierwszymSkinem(string[] linieStrony, out int nr)
+        
+{
+            
+nr = 0;
+
+            
+for (int i = 0; i < linieStrony.Length; i++)
+            
+{
+                
+if (linieStrony[i].Contains("family")) //<h3><a href="https://csgostash.com/family/Scumbria">Scumbria</a></h3>
+                
+{
+                    
+nr = i;
+                    
+break;
+                
+}
+            
+}
+        
+}
 
 }
 
