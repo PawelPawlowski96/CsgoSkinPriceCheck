@@ -776,6 +776,53 @@ igaben = 0;
         
 }
 
+private void button1_Click(object sender, EventArgs e)
+        
+{
+            
+string folderCache = @"C:\Windows\Temp\CsgoSkinPriceCheck\";
+
+            
+if (pobieranie.IsAlive)
+            
+{
+                
+MessageBox.Show("Nie można tego zrobić w trakcie pobierania.");
+            
+}
+           
+ else
+            
+{
+                
+pictureBox1.Image.Dispose();
+                
+checkBox1.Enabled = false;
+                
+comboBox1.Enabled = false;
+                
+comboBox2.Enabled = false;
+
+                
+if (!Directory.Exists(folderCache) && !Directory.EnumerateFileSystemEntries(folderCache).Any())
+                
+{
+                    
+MessageBox.Show("Brak cache do usunięcia.");
+                
+}
+                
+else
+                
+{
+                    
+usuwanie.Start();
+                
+}
+            
+}
+        
+}
 }
 
 }
