@@ -350,6 +350,23 @@ int numerLiniiZGrafika = sortedListaZDanymi[k].numerLiniiNazwySkina + 10;
 label8.Visible = false;
             
 }
+catch (ArgumentOutOfRangeException)
+            
+{
+                
+MessageBox.Show("Wprowadź prawidłową nazwę skina.");
+            
+}
+            
+catch (Exception ex)
+            
+{
+                
+MessageBox.Show(ex.ToString());
+            
+}
+        
+}
 
 }
 
