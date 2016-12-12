@@ -125,7 +125,22 @@ public void comboBox1SelectedOnline()
             
 try
             
-{   
+{  
+//Program pobierze zawartość odpowiedniej strony (i zapisze ją do tablicy), zależnie od tego, którą broń wybrał użytkownik.
+                
+label8.Visible = true;
+                
+string stronaZeSkinami = new WebClient().DownloadString(ustalanieAdresuUrl(comboBox1.Text));
+                
+File.WriteAllText(@"C:\Windows\Temp\CsgoSkinPriceCheck\CsgoSkinPriceCheck_temp1.txt", stronaZeSkinami);
+                
+linieStrony = File.ReadAllLines(@"C:\Windows\Temp\CsgoSkinPriceCheck\CsgoSkinPriceCheck_temp1.txt");
+
+                
+List<PobraneDane> listaZDanymi = new List<PobraneDane>();
+                
+int nrLn;
+
 }
 
 }
