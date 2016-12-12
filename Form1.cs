@@ -441,6 +441,43 @@ return "https://csgostash.com/weapon/" + wartoscPola;
         
 }
 
+public string ustalanieNazwySkina(string[] tablica, int linijka)
+        
+{
+            
+//Przykładowa linia wygląda tak: <h3><a href="https://csgostash.com/family/Scumbria">Scumbria</a></h3>
+            
+int index1 = tablica[linijka].IndexOf(">", 11);
+            
+int index2 = tablica[linijka].IndexOf("</a></h3>", 11);
+            
+string nazwaSkina = tablica[linijka].Substring(index1 + 1, index2 - index1 - 1);
+
+            
+if (nazwaSkina == "â… (Vanilla)")
+                
+return "Vanilla";
+
+            
+if (nazwaSkina == "Sunset Storm ĺŁ±")
+                
+return "Sunset Storm 1";
+
+            
+if (nazwaSkina == "Sunset Storm ĺĽ")
+                
+return "Sunset Storm 2";
+
+            
+if (nazwaSkina == "éľŤçŽ‹ (Dragon King)")
+                
+return "Dragon King";
+
+            
+return nazwaSkina;
+
+        
+}
 }
 
 }
