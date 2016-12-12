@@ -197,7 +197,32 @@ MessageBox.Show(ex.ToString());
 public void comboBox1SelectedOffline()
        
  {
- 
+ //Program sprawdza czy pobieranie danych nadal trwa. Jeśli się zakończyło, przepuści dalej. Jeśli nie, wyświetli informację
+            
+//o tym, ile zostało już pobrane.
+            
+int postep = 0;
+            
+if (pobieranie.IsAlive)
+            
+{
+                
+if (obecniePobieranaBron != null)
+                
+{
+                    
+for (; postep < bronie.Length; postep++)
+                    
+{
+                        
+if (bronie[postep] == obecniePobieranaBron)
+                            
+break;
+                    
+}
+                
+}
+
 
 }
 
