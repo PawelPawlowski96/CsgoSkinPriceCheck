@@ -313,6 +313,43 @@ break;
 liniaZCena = linieStrony[sortedListaZDanymi[k].numerLiniiNazwySkina + 13];
                 
 string liniaTestowa = linieStrony[sortedListaZDanymi[k].numerLiniiNazwySkina + 16]; 
+//Linia testowa, bo skin niekoniecznie posiada wersję StatTrak lub Souvenir.
+                
+if (linieStrony[sortedListaZDanymi[k].numerLiniiNazwySkina + 7].Contains("Available"))
+                
+{
+                    
+ustalanieCeny(ref liniaTestowa);
+
+                    
+if (linieStrony[sortedListaZDanymi[k].numerLiniiNazwySkina + 7].Contains("StatTrak"))
+                        
+label4.Text = liniaTestowa + " (StatTrak)";
+                    
+if (linieStrony[sortedListaZDanymi[k].numerLiniiNazwySkina + 7].Contains("Souvenir"))
+                        
+label4.Text = liniaTestowa + " (Souvenir)";
+                
+}
+
+                
+else
+                    
+label4.Text = "Brak";
+
+                
+ustalanieCeny(ref liniaZCena);
+                
+label3.Text = liniaZCena;
+
+                
+int numerLiniiZGrafika = sortedListaZDanymi[k].numerLiniiNazwySkina + 10;
+               
+ pictureBox1.Load(ustalanieLikuDoGrafiki(numerLiniiZGrafika, linieStrony));
+                
+label8.Visible = false;
+            
+}
 
 }
 
