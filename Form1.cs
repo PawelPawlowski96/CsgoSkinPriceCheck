@@ -65,7 +65,44 @@ usuwanie = new Thread(usuwanieDanych);
 label8.Visible = false;
             
 comboBox1.Text = "Wybierz broń";     
+//Dodawanie elementów to pierwszego combo boxa.
+            
+for (int i = 0; i < bronie.Length; i++)
+            
+{
+                
+comboBox1.Items.Add(bronie[i]);
+            
+}
 
+            
+Directory.CreateDirectory(@"C:\Windows\Temp\CsgoSkinPriceCheck\images\");
+            
+pictureBox1.Image = new Bitmap(Properties.Resources.gaben1);
+        
+}
+
+        
+private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        
+{
+            
+pictureBox1.Image = new Bitmap(Properties.Resources.gaben1);
+            
+checkBox1.Enabled = false;
+            
+comboBox2.Items.Clear();
+            
+comboBox2.Text = "";
+            
+label3.Text = "---";
+            
+label4.Text = "---";
+
+            
+if (!checkBox1.Checked)
+                
+sortedListaZDanymi.Clear();
     
 }
 
