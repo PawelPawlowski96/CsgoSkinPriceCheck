@@ -411,6 +411,21 @@ MessageBox.Show(ex.ToString());
 }
         
 }
+private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        
+{
+            
+if (checkBox1.Checked)
+            
+{
+                
+checkBox1.Enabled = false;
+                
+pobieranie.Start();
+           
+ }
+       
+ }
 
 }
 
