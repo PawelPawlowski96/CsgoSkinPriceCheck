@@ -478,6 +478,35 @@ return nazwaSkina;
 
         
 }
+public void ustalanieCeny(ref string linia)
+        
+{
+            
+//Przykładowa linia wygląda tak: 
+            
+//<p class="nomargin"><a href="https://csgostash.com/skin/649/XM1014-Scumbria" data-toggle="tooltip" data-placement="right" title="0  - 0 Keys">0,08&euro; - 0,16&euro;</a></p>
+            
+try
+            
+{
+                
+int odkad = linia.IndexOf(">", 50) + 1;
+                
+linia = linia.Substring(odkad, linia.Length - odkad - 8);
+                
+linia = linia = linia.Replace(",--", "").Replace("&euro;", "") + " €";
+            
+}
+            
+catch (ArgumentOutOfRangeException)
+            
+{
+                
+linia = "Brak Info";
+            
+}
+        
+}
 }
 
 }
