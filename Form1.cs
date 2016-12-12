@@ -222,8 +222,6 @@ break;
 }
                 
 }
-
-//Ograniczyłem wartość postępu do maksymalnie dwóch miejsc po przecinku.
                 
 string wynik = Convert.ToString((float)postep / (float)bronie.Length * 100);
                 
@@ -271,6 +269,50 @@ MessageBox.Show(ex.ToString());
 private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         
 {
+//Po zaznaczeniu wartości w drugim combo boxie, program znowy wybiera którą ścieżką pójść. Znowu w zależności od statusu check boxa.
+            
+label7.Text = "";
+            
+if (checkBox1.Checked)
+                
+comboBox2SelectedOffline();
+            
+else
+                           
+comboBox2SelectedOnline();
+        
+}
+
+        
+public void comboBox2SelectedOnline()
+        
+{
+            
+try
+            
+{
+                
+label8.Visible = true;
+                
+string liniaZCena;
+                
+int k = 0;
+//Ta pętla odczytuje który skin został wybrany.
+                
+for (; k < sortedListaZDanymi.Count; k++)
+                
+{
+                    
+if (comboBox2.Text == sortedListaZDanymi[k].nazwaSkina)
+                        
+break;
+                
+}
+
+                
+liniaZCena = linieStrony[sortedListaZDanymi[k].numerLiniiNazwySkina + 13];
+                
+string liniaTestowa = linieStrony[sortedListaZDanymi[k].numerLiniiNazwySkina + 16]; 
 
 }
 
