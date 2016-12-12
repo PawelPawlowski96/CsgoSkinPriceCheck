@@ -526,6 +526,36 @@ linkDoGrafiki = linkDoGrafiki.Remove(ileUsunac);
 return linkDoGrafiki;
         
 }
+public void ustalanieNastepnegoNumeruStrony(string[] tablica, string nazwa, ref int numer)
+        
+{
+           
+ if (tablica[numer + 37].Contains("text/javascript")) //<script type='text/javascript'>
+                
+numer += 27 + 35;
+            
+else
+           
+ {
+                
+if (tablica[numer + 35].Contains("family")) //<h3><a href="https://csgostash.com/family/Scumbria">Scumbria</a></h3>
+                    
+numer += 35;
+                
+else
+               
+ {
+                    
+if ((tablica[numer + 35].Contains("row") && tablica[numer + 35].Contains("<div class=")) || tablica[numer + 35].Contains("Default"))
+                        
+numer = 0;
+                
+}
+            
+}
+        
+}
+
 }
 
 }
