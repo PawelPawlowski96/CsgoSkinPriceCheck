@@ -731,6 +731,50 @@ MessageBox.Show("Niektóre dane nie mogły zostać usunięte. Możesz usunąć j
 Application.Exit();
         
 }
+private void label7_Click(object sender, EventArgs e)
+        
+{
+            
+pictureBox1_Click(sender, e);
+        
+}
+
+        
+private void pictureBox1_Click(object sender, EventArgs e)
+        
+{
+            
+label7.Text = "";
+            
+igaben++;
+
+            
+if (igaben == 1)
+                
+pictureBox1.Image = new Bitmap(Properties.Resources.gaben1);
+
+            
+if (igaben == 2)
+                
+pictureBox1.Image = new Bitmap(Properties.Resources.gaben2);
+
+            
+if (igaben == 3)
+                
+pictureBox1.Image = new Bitmap(Properties.Resources.gaben3);
+
+            
+if (igaben == 4)
+            
+{
+                
+pictureBox1.Image = new Bitmap(Properties.Resources.gaben4);
+                
+igaben = 0;
+            
+}
+        
+}
 
 }
 
