@@ -103,7 +103,29 @@ label4.Text = "---";
 if (!checkBox1.Checked)
                 
 sortedListaZDanymi.Clear();
-    
+
+ //Tutaj na dobrą sprawę program obiera jedną z dwóch możliwych dróg, w zależności od podjętej przez użytkownika decyzji. Może pobierać całą zawartość przed
+            
+//dopuszczeniem użytkownika do użytkowania (wariant comboBox1SelectedOffline), albo będzie pobierał wszelkie dane na bieżąco (comboBox1SelectedOnline).
+            
+if (checkBox1.Checked)
+                
+comboBox1SelectedOffline();
+            
+else
+                
+comboBox1SelectedOnline();
+        
+}
+
+        
+public void comboBox1SelectedOnline()
+        
+{
+            
+try
+            
+{   
 }
 
 }
