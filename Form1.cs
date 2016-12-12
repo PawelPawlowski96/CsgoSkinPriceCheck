@@ -426,6 +426,20 @@ pobieranie.Start();
  }
        
  }
+ public string ustalanieAdresuUrl(string wartoscPola)
+        
+{
+            
+//W adresach na tej stronie spacje są zamieniane na "+".
+            
+if (wartoscPola.Contains(" "))
+                
+wartoscPola = wartoscPola.Replace(" ", "+");
+
+            
+return "https://csgostash.com/weapon/" + wartoscPola;
+        
+}
 
 }
 
