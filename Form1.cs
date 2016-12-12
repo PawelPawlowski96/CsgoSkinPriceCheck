@@ -139,7 +139,26 @@ linieStrony = File.ReadAllLines(@"C:\Windows\Temp\CsgoSkinPriceCheck\CsgoSkinPri
                 
 List<PobraneDane> listaZDanymi = new List<PobraneDane>();
                 
-int nrLn;
+int nrLn;               
+ustalanieNumeruLiniiZPierwszymSkinem(linieStrony, out nrLn);
+//Tworzenie obiektów zawierających informacje o danym skinie: nazwa broni, nazwa skina, numer linni w której owa nazwa skina występuje.
+                
+//To ostatnie posłuży potem do odnalezienia cen i grafiki.
+                
+while (nrLn != 0)
+                
+{
+                    
+string skin = ustalanieNazwySkina(linieStrony, nrLn);
+                    
+PobraneDane skinn = new PobraneDane(comboBox1.Text, skin, nrLn);
+                    
+listaZDanymi.Add(skinn);
+                    
+ustalanieNastepnegoNumeruStrony(linieStrony, comboBox1.Text, ref nrLn);
+                
+}
+
 
 }
 
