@@ -386,6 +386,31 @@ if (comboBox1.Text == sortedListaZDanymi[m].nazwaBroni && comboBox2.Text == sort
 break;
                 
 }
+label3.Text = sortedListaZDanymi[m].cenaSkina;
+                
+label4.Text = sortedListaZDanymi[m].cenaStatTrak;
+                
+pictureBox1.Load(@"C:\Windows\Temp\CsgoSkinPriceCheck\images\" + sortedListaZDanymi[m].sciezkaDoGrafiki);
+            
+}
+            
+catch (ArgumentOutOfRangeException)
+            
+{
+                
+MessageBox.Show("Wprowadź prawidłową nazwę skina.");
+            
+}
+            
+catch (Exception ex)
+            
+{
+                
+MessageBox.Show(ex.ToString());
+            
+}
+        
+}
 
 }
 
