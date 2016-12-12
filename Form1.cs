@@ -158,7 +158,46 @@ listaZDanymi.Add(skinn);
 ustalanieNastepnegoNumeruStrony(linieStrony, comboBox1.Text, ref nrLn);
                 
 }
+//Skiny na stronie nie są podane w kolejności alfabetycznej, więc wypadałoby je posortować, a dopiero potem dodać do drugiego combo boxa.
+                
+sortedListaZDanymi = listaZDanymi.OrderBy(o => o.nazwaSkina).ToList();
 
+                
+for (int j = 0; j < sortedListaZDanymi.Count; j++)
+                
+{
+                    
+comboBox2.Items.Add(sortedListaZDanymi[j].nazwaSkina);
+                
+}
+                
+label8.Visible = false;
+            
+}
+            
+catch (WebException)
+            
+{
+                
+MessageBox.Show("Wprowadź prawidłową nazwę broni");
+            
+}
+            
+catch (Exception ex)
+            
+{
+                
+MessageBox.Show(ex.ToString());
+            
+}
+        
+}
+
+        
+public void comboBox1SelectedOffline()
+       
+ {
+ 
 
 }
 
