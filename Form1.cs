@@ -507,6 +507,25 @@ linia = "Brak Info";
 }
         
 }
+public string ustalanieLikuDoGrafiki(int numerLinii, string[] linieStrony)
+        
+{
+            
+//Przykładowa linia wygląda tak:
+            
+//<a href="https://csgostash.com/skin/649/XM1014-Scumbria"><img class="img-responsive center-block" src="https://csgostash.com/img/skins/s649fn.png" alt="XM1014 Scumbria"></a>
+            
+int odkad = linieStrony[numerLinii].IndexOf("src", 0) + 5;
+            
+string linkDoGrafiki = linieStrony[numerLinii].Substring(odkad);
+            
+int ileUsunac = linkDoGrafiki.IndexOf("alt", 0) - 2;
+            
+linkDoGrafiki = linkDoGrafiki.Remove(ileUsunac);
+            
+return linkDoGrafiki;
+        
+}
 }
 
 }
